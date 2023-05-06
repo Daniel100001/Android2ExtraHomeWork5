@@ -53,5 +53,4 @@ class NoteAppDetailFragment : Fragment() {
             findNavController().navigateUp()
         }
     }
-
 }

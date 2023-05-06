@@ -13,5 +13,5 @@ data class NoteModel(
     val data: String
 ) : Serializable {
     @PrimaryKey(autoGenerate = true)
-    var id:Int = 0
+    var id: Int = 0
 }

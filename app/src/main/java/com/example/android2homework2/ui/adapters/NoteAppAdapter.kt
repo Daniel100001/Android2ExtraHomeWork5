@@ -32,8 +32,7 @@ class NoteAppAdapter : RecyclerView.Adapter<NoteAppAdapter.NoteAppViewHolder>() 
             ItemNoteBinding.inflate(
                 LayoutInflater.from(
                     parent.context
-                ), parent,
-                false
+                ), parent, false
             )
         )
     }

@@ -15,6 +15,7 @@ interface NoteDao {
 
     @Query("SELECT * FROM noteModel")
     fun getAll(): LiveData<List<NoteModel>>
+
     @Query("SELECT * FROM noteModel WHERE description LIKE :description ORDER BY id DESC")
     fun searchNotesByDescription(description: String): List<NoteModel>
 }

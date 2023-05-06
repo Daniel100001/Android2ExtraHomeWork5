@@ -44,11 +44,10 @@ class SingUpFragment : Fragment() {
 
     private fun setUpListener() = with(binding) {
         var check = true
-        var t = "Подтвердить"
         binding.g.setOnClickListener {
             if (check) {
                 startPhoneNumberVerification(editTextPhone.text.toString())
-                g.text = t
+                g.text = getString(R.string.confirm)
                 check = false
             } else {
                 verifyPhoneNumberWithCode(storedVerificationId, editTextCode.text.toString())

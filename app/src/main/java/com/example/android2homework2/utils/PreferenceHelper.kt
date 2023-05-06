@@ -11,6 +11,7 @@ class PreferenceHelper {
         sharedPreference = context.getSharedPreferences("settings", Context.MODE_PRIVATE)
     }
     var saveBoolean
-        set(value) = sharedPreference?.edit()?.putBoolean("Bool", value!!)?.apply()!!
-        get() = sharedPreference?.getBoolean("Bool", false)
+        set(value) = sharedPreference?.edit()?.putBoolean("bool", value!!)?.apply()!!
+        get() = sharedPreference?.getBoolean("bool", false)
+
 }
